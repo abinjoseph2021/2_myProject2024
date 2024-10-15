@@ -8,3 +8,17 @@ const routes: Routes = [];
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+{
+  "angularCompilerOptions": {
+    "extendedDiagnostics": {
+      // The categories to use for specific diagnostics.
+      "checks": {
+        // Maps check name to its category.
+        "invalidBananaInBox": "suppress"
+      },
+      // The category to use for any diagnostics not listed in `checks` above.
+      "defaultCategory": "error"
+    }
+  }
+}
