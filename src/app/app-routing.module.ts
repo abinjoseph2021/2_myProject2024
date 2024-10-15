@@ -9,6 +9,7 @@ const routes: Routes = [];
 })
 export class AppRoutingModule { }
 
+
 interface Route {
   title?: string | Type<Resolve<string>> | ResolveFn<string>;
   path?: string;
@@ -29,4 +30,16 @@ interface Route {
   loadChildren?: LoadChildrenCallback;
   runGuardsAndResolvers?: RunGuardsAndResolvers;
   providers?: (EnvironmentProviders | Provider)[];
+{
+  "angularCompilerOptions": {
+    "extendedDiagnostics": {
+      // The categories to use for specific diagnostics.
+      "checks": {
+        // Maps check name to its category.
+        "invalidBananaInBox": "suppress"
+      },
+      // The category to use for any diagnostics not listed in `checks` above.
+      "defaultCategory": "error"
+    }
+  }
 }
